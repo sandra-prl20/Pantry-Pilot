@@ -31,3 +31,35 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles.css */
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #bd9329; /* Yellow color */
+  margin-bottom: 4rem;
+  text-shadow: 2px 2px 4px rgba(171, 139, 139, 0.5);
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.title:hover {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

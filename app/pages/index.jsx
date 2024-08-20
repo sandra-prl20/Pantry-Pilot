@@ -1,0 +1,14 @@
+// pages/index.js
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/landing'); // Redirect to the landing page
+  }, [router]);
+
+  return null; // No content on the default index page
+}
